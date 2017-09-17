@@ -6,7 +6,7 @@ import { QuoteService } from './quote.service';
   selector: 'my-app',
   template: `
     <h1>Quote Of The Day</h1>
-    <p><em>{{quote?.line}}</em> - {{quote?.author}}</p>
+    <p><em>{{quote?.line}}</em> - {{quote?.author}}</p> // ? bezpieczny operator. Jeżeli jest zdefiniowany to wyświetla, jeśli nie to nie wyświetlaj. Http jest asynchroniczny więc wartość pojawia się po chwili.
   `
 })
 export class AppComponent {
